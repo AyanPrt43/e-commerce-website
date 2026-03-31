@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orders</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1 style="text-align:center;">📦 My Orders</h1>
+
+<div id="orders"></div>
+
+<script>
+let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+let container = document.getElementById("orders");
+
+if (orders.length === 0) {
+  container.innerHTML = "<h2>No orders yet 😢</h2>";
+}
+
+orders.forEach(order => {
+  container.innerHTML += `
+    <div class="cart-item">
+      <p>Total: ₹${order.total}</p>
+      <p>Date: ${order.date}</p>
+    </div>
+  `;
+});
+</script>
+
+</body>
+</html>

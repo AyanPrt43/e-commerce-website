@@ -1,0 +1,187 @@
+/* BACKGROUND */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  overflow: hidden;
+}
+
+/* ANIMATED BACKGROUND */
+body::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #ff7e5f, transparent);
+  top: -100px;
+  left: -100px;
+  filter: blur(100px);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #feb47b, transparent);
+  bottom: -100px;
+  right: -100px;
+  filter: blur(100px);
+}
+
+/* CARD */
+.login-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 35px;
+  width: 360px;
+  text-align: center;
+  color: white;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* TEXT */
+.login-card h2 {
+  margin-bottom: 5px;
+}
+
+.login-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* INPUT WRAPPER */
+.input-box {
+  position: relative;
+  margin: 15px 0;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* FLOAT LABEL */
+.input-box label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 13px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 11px;
+  color: #ff7e5f;
+}
+
+/* PASSWORD ICON */
+.password-box {
+  position: relative;
+}
+
+.password-box span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tabs button {
+  flex: 1;
+  background: rgba(255,255,255,0.2);
+}
+
+.tabs button.active {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+/* FORGOT */
+.forgot {
+  font-size: 13px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* ERROR */
+.error {
+  color: #ff4d4d;
+  font-size: 13px;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#recaptcha-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  transform: scale(0.95);
+}
+
+#recaptcha-container > div {
+  margin: auto;
+}

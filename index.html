@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ecommerce</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 🔐 AUTH CHECK -->
+  <script type="module">
+    import { app } from "./js/firebase.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
+
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        window.location.href = "login.html";
+      }
+    });
+  </script>
+
+</head>
+<body>
+
+<!-- 🧭 NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">🛒 Ayan's Store</h2>
+
+  <input type="text" id="search" placeholder="Search products...">
+
+  <div class="nav-right">
+
+    <!-- 🛒 CART -->
+    <a href="cart.html" class="cart-link">
+      🛒 <span id="cartCount" class="cart-count">0</span>
+    </a>
+
+    <!-- ❤️ -->
+    <span style="font-size:20px; cursor:pointer;">❤️</span>
+
+    <!-- 👤 PROFILE DROPDOWN -->
+    <div class="profile-container">
+
+      <img src="https://i.pravatar.cc/40" class="profile-img" onclick="toggleMenu()">
+
+      <div id="profileMenu" class="profile-menu">
+        <p>👤 My Profile</p>
+        <p onclick="goToOrders()">📦 Orders</p>
+        <p onclick="logout()">🚪 Logout</p>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- 🎯 HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>🔥 Big Sale is Live</h1>
+    <p>Up to 50% OFF on premium shoes</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+  </div>
+</section>
+
+<!-- 🛍️ PRODUCTS -->
+<h2 class="section-title">Products</h2>
+
+<div id="products" class="product-grid"></div>
+
+<!-- 🔽 SCROLL FUNCTION -->
+<script>
+function scrollToProducts() {
+  document.querySelector(".section-title").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+// 👤 TOGGLE DROPDOWN
+function toggleMenu() {
+  const menu = document.getElementById("profileMenu");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// 📦 GO TO ORDERS
+function goToOrders() {
+  window.location.href = "orders.html";
+}
+
+// ❌ CLOSE WHEN CLICK OUTSIDE
+document.addEventListener("click", function(e) {
+  const profile = document.querySelector(".profile-container");
+  const menu = document.getElementById("profileMenu");
+
+  if (!profile.contains(e.target)) {
+    menu.style.display = "none";
+  }
+});
+</script>
+
+
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/products.js"></script>
+<script type="module" src="js/cart.js"></script>
+
+</body>
+</html>

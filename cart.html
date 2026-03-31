@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1 style="text-align:center;">🛒 Your Cart</h1>
+
+<div id="cartItems" class="cart-container"></div>
+
+<h2 id="total" style="text-align:center;"></h2>
+
+<div style="text-align:center;">
+  <button class="checkout-btn" onclick="checkout()">Checkout 💳</button>
+</div>
+
+
+
+<!-- Razorpay -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<!-- Your main logic -->
+<script src="js/cart.js"></script>
+
+</body>
+</html>
