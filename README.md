@@ -4,7 +4,7 @@ A modern ecommerce web application built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-👉 [Click Here to View Live Website](https://your-username.github.io/ecommerce-project/)
+👉 [Click Here to View Live Website](https://AyanPrt43.github.io/ecommerce-project/)
 
 ## 📌 Features
 
@@ -22,7 +22,8 @@ A modern ecommerce web application built using HTML, CSS, and JavaScript.
 
 ## 📷 Screenshots
 
-(Add your screenshots here later)
+<img width="1888" height="901" alt="image" src="https://github.com/user-attachments/assets/c59b7f12-5008-43ed-8d6e-f7b0f3e3b97e" />
+
 
 ## 📂 Project Structure
 
@@ -35,4 +36,4 @@ A modern ecommerce web application built using HTML, CSS, and JavaScript.
 
 ## 👨‍💻 Author
 
-Your Name
+Ayan Pratap 
