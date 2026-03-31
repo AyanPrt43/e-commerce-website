@@ -7,7 +7,12 @@ NOTE:- Login credentials for demo access_-
       Email: test@gmail.com
       Password: 123456
 
-👉(<a href="https://ayanprt43.github.io/e-commerce-website/" target="_blank">Click Here to View Live Website</a>)
+
+<p align="center">
+  <a href="https://ayanprt43.github.io/e-commerce-website/">
+    <img src="https://img.shields.io/badge/🌐%20Live%20Website-Click%20Here-blue?style=for-the-badge">
+  </a>
+</p>
 
 ## 📌 Features
 
