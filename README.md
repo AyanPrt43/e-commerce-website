@@ -3,7 +3,7 @@
 A modern ecommerce web application built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
-NOTE:- USE-
+NOTE:- Login credentials for demo access_-
       Email: test@gmail.com
       Password: 123456
 
