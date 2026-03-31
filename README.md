@@ -3,6 +3,9 @@
 A modern ecommerce web application built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
+NOTE:- USE-
+      Email: test@gmail.com
+      Password: 123456
 
 👉 [Click Here to View Live Website](https://AyanPrt43.github.io/e-commerce-website/)
 
