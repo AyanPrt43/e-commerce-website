@@ -7,7 +7,7 @@ NOTE:- Login credentials for demo access_-
       Email: test@gmail.com
       Password: 123456
 
-👉 [Click Here to View Live Website](https://AyanPrt43.github.io/e-commerce-website/)
+👉(<a href="https://ayanprt43.github.io/e-commerce-website/" target="_blank">Click Here to View Live Website</a>)
 
 ## 📌 Features
 
