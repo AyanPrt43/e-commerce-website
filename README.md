@@ -4,7 +4,7 @@ A modern ecommerce web application built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-👉 [Click Here to View Live Website](https://AyanPrt43.github.io/ecommerce-project/)
+👉 [Click Here to View Live Website](https://AyanPrt43.github.io/e-commerce-website/)
 
 ## 📌 Features
 
