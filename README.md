@@ -4,10 +4,10 @@ A modern ecommerce web application built using HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 NOTE:- Login credentials for demo access_-
-      Email: test@gmail.com
+      Email: test@gmail.com <br>
       Password: 123456
       <p> OR </p>
-      Phone - +911234567890
+      Phone - +911234567890 <br>
       OTP - 123456
 
 
